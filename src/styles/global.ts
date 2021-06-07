@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -45,18 +45,23 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
+${({ theme }) => css`
   html {
     font-size: 62.5%;
   }
 
-  html, body, #__next {
+  html,
+  body,
+  #__next {
     height: 100%;
   }
 
   body {
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: ${theme.font.family};
+    font-size: ${theme.font.sizes.medium};
   }
+`}
+
 `
 
 export default GlobalStyles

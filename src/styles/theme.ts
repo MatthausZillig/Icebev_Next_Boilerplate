@@ -9,9 +9,10 @@ export default {
   font: {
     family:
       "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    light: 300,
+    light: 200,
     normal: 400,
-    bold: 600,
+    semiBold: 600,
+    bold: 800,
     sizes: {
       xsmall: '1.2rem',
       small: '1.4rem',
