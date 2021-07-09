@@ -1,8 +1,6 @@
 
 ### ICEBEV NEXT BOILERPLATE
 
-This boilerplate uses [dependabot](https://app.dependabot.com/) and github actions for CI and to keep up to date.
-
 ## :rocket: What is inside?
 
 This project uses lot of stuff as:
